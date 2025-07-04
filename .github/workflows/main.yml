@@ -1,8 +1,7 @@
 name: Compile
 permissions:
   contents: write
-on:
-  push:
+on: [ push, dispatch_workflow ]
     branches: [ main ]
     paths:
       - 'src/**'
